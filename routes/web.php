@@ -12,4 +12,12 @@
 */
 
 Route::get('/', "SearchController@index");
+Route::get('/home', "SearchController@index");
+
 Route::post('/search', "SearchController@search");
+
+Route::get('/login', "Auth\LoginController@index");
+Route::get('/sendloginrequest', "Auth\LoginController@sendloginrequest");
+Route::get('/verifyauth', "Auth\AuthenticatorController@verifylogin");
+
+Route::get('/detail/{type}/{id}', "SearchController@getdetail");

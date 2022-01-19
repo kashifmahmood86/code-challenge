@@ -42,7 +42,7 @@
         <form method="post" action="/search">
             {{csrf_field()}}
             <input id="search-box" name="query" type="text" placeholder="search term" />
-            <button type="submit">Search for Artists</button>
+            <button type="submit">Search</button>
 
         </form>
     </div>
